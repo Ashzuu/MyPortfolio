@@ -7,6 +7,10 @@
   --font-color-primary: var(--primary-color);
   --font-color-not-important: #c4c4c4;
   --font-color-very-not-important: #939393;
+
+  --card-width-size: 300px;
+  --card-height-size: 400px;
+  --card-background-color: #262646;
 }
 body {
   margin: 0;

@@ -8,7 +8,7 @@ import Button from "~/components/usable/Button.vue";
   <section id="first-section-container">
     <div id="first-section-content">
       <div id="first-section-badge-container">
-        <badge class="primary-color-override">Music</badge> X <badge class="secondary-color-override">Computer science</badge>
+        <badge class="primary-color-override">Music</badge>  <badge class="secondary-color-override">Computer science</badge>
       </div>
       <h1>Découvrez mon<br><span class="synth-wave-color large">Portfolio</span></h1>
       <p class="description-content">Ce site a pour but de vous montrer mes différentes réalisations informatiques que j'ai pu réaliser tout au long de mon parcours,

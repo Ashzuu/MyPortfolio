@@ -8,3 +8,12 @@
 #project-section-container h2 {
   font-size: 62px;
 }
+
+.cards-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 70%;
+  height: fit-content;
+  max-height: 60%;
+}
