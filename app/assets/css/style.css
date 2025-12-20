@@ -1,0 +1,28 @@
+:root {
+  --primary-color:white;
+  --enhanced-color-primary: #aa00ff;
+  --enhanced-background-color-primary: rgba(155, 42, 142, 0.18);
+  --enhanced-color-secondary: #00FFE5FF;
+  --enhanced-background-color-secondary: rgba(0, 255, 229, 0.18);
+  --font-color-primary: var(--primary-color);
+  --font-color-not-important: #c4c4c4;
+  --font-color-very-not-important: #939393;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', 'sans-serif';
+  color: var(--primary-color);
+  background-color: black;
+}
+
+section, main {
+  width: 100dvw;
+  height: 100dvh;
+}
+
+.synth-wave-color {
+  background: -webkit-linear-gradient(45deg, var(--enhanced-color-secondary), var(--enhanced-color-primary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

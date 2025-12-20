@@ -1,0 +1,9 @@
+.badge-container {
+  width: 150px;
+  padding: 10px;
+  border-radius: 30px;
+}
+
+.text-badge {
+  font-size: 15px;
+}

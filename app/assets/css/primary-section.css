@@ -1,0 +1,50 @@
+#first-section-container {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#first-section-container h1 {
+  font-size: 76px;
+  margin: 0;
+}
+
+#first-section-content {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+#first-section-badge-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.description-content {
+  font-size: 16px;
+  color: var(--font-color-very-not-important);
+}
+
+#buttons-section-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.primary-color-override {
+  color: var(--enhanced-color-primary);
+  border-color: var(--enhanced-color-primary);
+  background-color: var(--enhanced-background-color-primary);
+}
+
+.secondary-color-override {
+  color: var(--enhanced-color-secondary);
+  border-color: var(--enhanced-color-secondary);
+  background-color: var(--enhanced-background-color-secondary);
+}

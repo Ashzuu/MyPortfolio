@@ -1,0 +1,30 @@
+.button {
+  text-decoration: none;
+}
+
+.button-content {
+  padding: 10px;
+  border-radius: 10px;
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  font-size: 20px;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.primary {
+  color: var(--enhanced-color-primary);
+  border-color: var(--enhanced-color-primary);
+  background-color: var(--enhanced-background-color-primary);
+}
+
+.secondary {
+  color: var(--enhanced-color-secondary);
+  border-color: var(--enhanced-color-secondary);
+  background-color: var(--enhanced-background-color-secondary);
+}
+
