@@ -1,6 +1,6 @@
 # Portfolio Website
 
-A modern, responsive portfolio website built with **Nuxt 4** and **Vue 3**. Showcase your projects, music, and connect with visitors through a beautiful, interactive interface.
+A modern, responsive portfolio website built with **Nuxt 4** and **Vue 3**. 
 
 ## ✨ Features
 
@@ -23,7 +23,7 @@ A modern, responsive portfolio website built with **Nuxt 4** and **Vue 3**. Show
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/portfolio.git
+   git clone https://github.com/Ashzuu/portfolio.git
    cd portfolio
    ```
 
@@ -200,23 +200,9 @@ Global styles are in `app/assets/css/style.css`. Component-specific styles are l
 - `npm run generate` - Generate static site
 - `npm run postinstall` - Prepare Nuxt after install
 
-## 🚀 Deployment
-
-This project can be deployed to various platforms. Check the [Nuxt deployment documentation](https://nuxt.com/docs/getting-started/deployment) for platform-specific instructions.
-
-Popular deployment options:
-- **Vercel** - Optimized for Nuxt
-- **Netlify** - One-click deployment
-- **GitHub Pages** - Free static hosting
-- **Docker** - Containerized deployment
-
 ## 📄 License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 🤝 Contributing
-
-Contributions are welcome! Feel free to open issues and pull requests to help improve this project.
 
 ## 📧 Contact
 
