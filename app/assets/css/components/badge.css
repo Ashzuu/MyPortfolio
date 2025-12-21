@@ -14,3 +14,17 @@
   border: 1px solid orange;
   padding: 5px 8px;
 }
+
+.termine {
+  width: fit-content;
+  color: green;
+  border: 1px solid green;
+  padding: 5px 8px;
+}
+
+.archive {
+  width: fit-content;
+  padding: 5px 8px;
+  color: var(--enhanced-color-primary);
+  border: 1px solid var(--enhanced-color-primary);
+}

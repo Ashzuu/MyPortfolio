@@ -10,13 +10,30 @@
   margin: 0;
 }
 
-.very-not-important-text {
-  color: #252525;
+.secret-text {
+  color: #050505;
+  margin: 0;
+}
+
+.about-me-info-part, .about-me-music-part {
+  width: 50%;
+}
+
+.about-me-info-part, .about-me-music-part {
+  display: flex;
+  gap: 5%;
+  flex-wrap: wrap;
+}
+
+.about-me-music-part {
+  justify-content:flex-end;
+}
+
+hr {
   margin: 0;
 }
 
 .about-me-section-container {
-  border: 1px solid var(--border-color);
   display: flex;
   justify-content: space-between;
   align-items: center;

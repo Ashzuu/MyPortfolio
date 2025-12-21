@@ -9,12 +9,23 @@
   font-size: 62px;
 }
 
-.legal-mentions {
+.logos-contact {
+  display: flex;
+  width: 50%;
+  justify-content: space-evenly;
+  font-size: 64px;
+}
+
+a {
   color: var(--primary-color);
   text-decoration: none;
+}
+
+.legal-mentions {
+
   width: 100%;
   display: flex;
   justify-content: center;
   position: relative;
-  bottom: 0;
+  bottom: 10px;
 }

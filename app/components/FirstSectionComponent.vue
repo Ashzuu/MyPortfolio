@@ -14,7 +14,7 @@ import Button from "~/components/usable/Button.vue";
       <p class="description-content">Ce site a pour but de vous montrer mes différentes réalisations informatiques que j'ai pu réaliser tout au long de mon parcours,
       mais aussi parler un peu de moi et mes passions</p>
       <div id="buttons-section-container">
-        <Button icon-name="weui:arrow-filled" variant="secondary" link-redirect="#project-section-container">Découvrir</Button>
+        <Button icon-name="weui:arrow-filled" variant="secondary" link-redirect="#project-title">Découvrir</Button>
         <Button icon-name="material-symbols:search" variant="primary" link-redirect="#contact-section-container">Me contacter</Button>
       </div>
     </div>

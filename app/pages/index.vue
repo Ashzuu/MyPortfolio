@@ -2,6 +2,7 @@
 import FirstSectionComponent from "~/components/FirstSectionComponent.vue";
 import ProjectSectionComponent from "~/components/ProjectSectionComponent.vue";
 import AboutMeSectionComponent from "~/components/AboutMeSectionComponent.vue";
+import ContactSectionComponent from "~/components/ContactSectionComponent.vue";
 </script>
 <template>
   <div>

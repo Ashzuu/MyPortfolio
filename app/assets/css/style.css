@@ -1,5 +1,5 @@
 :root {
-  --primary-color:white;
+  --primary-color: #ffffff;
   --enhanced-color-primary: #aa00ff;
   --enhanced-background-color-primary: rgba(155, 42, 142, 0.18);
   --enhanced-color-secondary: #00FFE5FF;
@@ -27,7 +27,6 @@ body {
 }
 
 section, main {
-  width: 100dvw;
   height: 100dvh;
 }
 
