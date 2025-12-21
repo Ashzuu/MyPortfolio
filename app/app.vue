@@ -1,13 +1,14 @@
 <script setup lang="ts">
 import FirstSectionComponent from "~/components/FirstSectionComponent.vue";
 import ProjectSectionComponent from "~/components/ProjectSectionComponent.vue";
+import AboutMeSectionComponent from "~/components/AboutMeSectionComponent.vue";
 </script>
 <template>
   <div>
     <NuxtRouteAnnouncer />
     <FirstSectionComponent />
     <ProjectSectionComponent />
-    <MusicSectionComponent />
+    <AboutMeSectionComponent />
     <ContactSectionComponent />
   </div>
 </template>

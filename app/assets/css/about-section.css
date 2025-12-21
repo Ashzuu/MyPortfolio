@@ -1,0 +1,31 @@
+#music-section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#music-section-container h2 {
+  font-size: 62px;
+  margin: 0;
+}
+
+.very-not-important-text {
+  color: #252525;
+  margin: 0;
+}
+
+.about-me-section-container {
+  border: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 15px;
+  width: 65%;
+  height: 50%;
+}
+
+.about-me-section-container hr {
+  height: 70%;
+  color: var(--border-color);
+}

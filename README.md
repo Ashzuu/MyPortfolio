@@ -68,6 +68,63 @@ Preview the production build locally:
 npm run preview
 ```
 
+### Docker Setup
+
+#### Prerequisites
+
+- [Docker](https://www.docker.com/products/docker-desktop) installed and running
+- [Docker Compose](https://docs.docker.com/compose/install/) (usually included with Docker Desktop)
+
+#### Build and Run with Docker
+
+1. **Build the Docker image**
+   ```bash
+   docker build -t portfolio .
+   ```
+
+2. **Run the container**
+   ```bash
+   docker run -p 3000:3000 portfolio
+   ```
+
+   The application will be accessible at `http://localhost:3000`
+
+#### Using Docker Compose (Recommended)
+
+The easiest way to run the application with Docker:
+
+```bash
+docker-compose up --build
+```
+
+This command will:
+- Build the Docker image
+- Start the container
+- Expose the application on port 3000
+- Enable automatic restart if the container crashes
+- Monitor health with periodic health checks
+
+**Stop the container:**
+```bash
+docker-compose down
+```
+
+**View logs:**
+```bash
+docker-compose logs -f
+```
+
+#### Docker Configuration Details
+
+The Docker setup uses a **multi-stage build** for optimal performance:
+
+1. **Dependencies Stage** - Installs production dependencies
+2. **Builder Stage** - Installs all dependencies and builds the application
+3. **Runtime Stage** - Creates the final lightweight image with only production dependencies
+
+**Image Size**: ~200MB (Alpine Linux base keeps it minimal)
+**Node Version**: 20 (Alpine variant for smaller footprint)
+
 ## 📂 Project Structure
 
 ```

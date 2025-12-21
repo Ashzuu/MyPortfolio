@@ -8,3 +8,13 @@
 #contact-section-container h2 {
   font-size: 62px;
 }
+
+.legal-mentions {
+  color: var(--primary-color);
+  text-decoration: none;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 0;
+}

@@ -7,3 +7,10 @@
 .text-badge {
   font-size: 15px;
 }
+
+.en-cours {
+  width: fit-content;
+  color: orange;
+  border: 1px solid orange;
+  padding: 5px 8px;
+}
