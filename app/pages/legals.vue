@@ -7,8 +7,6 @@ import Button from "~/components/usable/Button.vue";
     <h2 class="synth-wave-color">Mentions légales</h2>
     <Button link-redirect="/" variant="secondary" icon-name="material-symbols-light:home-rounded">Accueil</Button>
     <div class="legal-content">
-      <p class="lead">Les informations ci‑dessous constituent les mentions légales du site. Remplacez les champs entre crochets par vos données réelles.</p>
-
       <h3>Éditeur du site</h3>
       <p>
         Nom / Raison sociale : <strong>Evan DYNAK</strong><br>

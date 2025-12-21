@@ -48,3 +48,28 @@
   border-color: var(--enhanced-color-secondary);
   background-color: var(--enhanced-background-color-secondary);
 }
+
+@media screen and (max-width: 1020px) {
+  #first-section-container h1 {
+    font-size: 54px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  #first-section-content {
+    width: 80%;
+  }
+
+  #first-section-container h1 {
+    font-size: 3rem;
+  }
+
+  #first-section-container .description-content {
+    font-size: 15px;
+  }
+
+  #buttons-section-container {
+    display: flex;
+    flex-direction: column;
+  }
+}

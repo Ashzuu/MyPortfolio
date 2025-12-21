@@ -8,6 +8,7 @@
 #music-section-container h2 {
   font-size: 62px;
   margin: 0;
+  text-align: center;
 }
 
 .secret-text {
@@ -29,10 +30,6 @@
   justify-content:flex-end;
 }
 
-hr {
-  margin: 0;
-}
-
 .about-me-section-container {
   display: flex;
   justify-content: space-between;
@@ -42,7 +39,32 @@ hr {
   height: 50%;
 }
 
-.about-me-section-container hr {
-  height: 70%;
-  color: var(--border-color);
+@media screen and (max-width: 1500px) {
+  .about-me-info-part, .about-me-music-part {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .about-me-section-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .about-me-info-part, .about-me-music-part {
+    width: 80%;
+  }
+
+  #music-section-container {
+    margin-top: 100px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #music-section-container h2 {
+    font-size: 24px;
+  }
 }

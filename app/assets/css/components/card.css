@@ -9,6 +9,7 @@
   background: var(--card-background-color);
   position: relative;
   overflow: hidden;
+  transition: transform 180ms ease, box-shadow 180ms ease;
 }
 
 .card-image img {
@@ -24,6 +25,7 @@
   height: 60%;
   align-items: center;
   justify-content: center;
+  transition: opacity 180ms ease;
 }
 
 .card-controls {
@@ -48,20 +50,34 @@
   color: var(--primary-color);
 }
 
-.card:hover .card-controls {
+/* Desktop hover behavior */
+@media (hover: hover) and (pointer: fine) {
+  .card:hover .card-controls {
+    transform: translate(-50%, 0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .card:hover .card-image {
+    opacity: 0.1;
+  }
+
+  .card:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    animation: animationCard 180ms;
+    animation-fill-mode: forwards;
+  }
+}
+
+/* Touch / mobile behavior: use class toggle */
+.card.controls-visible .card-controls {
   transform: translate(-50%, 0);
   opacity: 1;
   pointer-events: auto;
 }
 
-.card:hover .card-image {
+.card.controls-visible .card-image {
   opacity: 0.1;
-}
-
-.card:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  animation: animationCard 180ms;
-  animation-fill-mode: forwards;
 }
 
 .card-content{
@@ -73,4 +89,32 @@
 @keyframes animationCard {
   0% {}
   100% {transform: translateY(-2%);}
+}
+
+/* Responsiveness */
+@media (max-width: 1024px) {
+  .card {
+    width: 45%;
+    height: 330px;
+  }
+  .card-controls {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 640px) {
+  .card {
+    width: 100%;
+    min-height: 400px;
+    height: auto;
+    margin-bottom: 16px;
+  }
+  .card-controls {
+    font-size: 28px;
+    width: 90%;
+  }
+  .card-content{
+    width: 90%;
+    height: auto;
+  }
 }

@@ -45,3 +45,15 @@
 .secondary .field-content p {
   color: var(--primary-color);
 }
+
+@media screen and (max-width: 1500px) {
+  .field-container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .field-container {
+    width: 100%;
+  }
+}

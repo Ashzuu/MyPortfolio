@@ -1,2 +1,6 @@
-User-Agent: *
+User-agent: *
 Disallow:
+
+# Point to sitemap
+Sitemap: http://evandynak.me/sitemap.xml
+

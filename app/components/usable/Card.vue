@@ -1,4 +1,5 @@
 <script setup lang="ts">
+  import { ref, onMounted, onBeforeUnmount } from 'vue';
   import Badge from "~/components/usable/Badge.vue";
 
   defineProps({
@@ -27,13 +28,67 @@
       default: ''
     }
   })
+
+  const controlsVisible = ref(false);
+  const isTouch = ref(false);
+  const cardRoot = ref<HTMLElement | null>(null);
+
+  const onCardClick = (e: MouseEvent) => {
+    // Only handle toggle on touch devices
+    if (!isTouch.value) return;
+    // Prevent the document click listener from immediately closing
+    e.stopPropagation();
+
+    // If clicking on a control link, let it behave normally
+    const target = e.target as HTMLElement | null;
+    if (target && target.closest('.card-controls a')) return;
+
+    // Close other open cards first
+    if (!controlsVisible.value) {
+      if (typeof window !== 'undefined') {
+        window.dispatchEvent(new CustomEvent('close-all-card-controls'));
+      }
+      controlsVisible.value = true;
+    } else {
+      controlsVisible.value = false;
+    }
+  }
+
+  const onDocumentClick = (e: Event) => {
+    if (!cardRoot.value) return;
+    const target = e.target as Node | null;
+    if (!target) return;
+    if (!cardRoot.value.contains(target)) {
+      controlsVisible.value = false;
+    }
+  }
+
+  const onCloseAll = () => {
+    controlsVisible.value = false;
+  }
+
+  onMounted(() => {
+    if (typeof window !== 'undefined') {
+      // Ensure boolean value for isTouch
+      isTouch.value = Boolean(('ontouchstart' in window) || (navigator.maxTouchPoints && navigator.maxTouchPoints > 0));
+      document.addEventListener('click', onDocumentClick);
+      window.addEventListener('close-all-card-controls', onCloseAll as EventListener);
+    }
+  })
+
+  onBeforeUnmount(() => {
+    if (typeof window !== 'undefined') {
+      document.removeEventListener('click', onDocumentClick);
+      window.removeEventListener('close-all-card-controls', onCloseAll as EventListener);
+    }
+  })
 </script>
 
 <template>
-  <div class="card">
+  <div ref="cardRoot" class="card" :class="{ 'controls-visible': controlsVisible }" @click="onCardClick">
     <div class="card-controls">
-      <a v-if="githubLink" :href="githubLink" target="_blank"><Icon name="mdi:github"/></a>
-      <a v-if="website" :href="website" target="_blank"><Icon name="dashicons:admin-site-alt3"/></a>
+      <a v-if="githubLink" :href="githubLink" target="_blank" @click.stop><Icon name="mdi:github"/></a>
+      <a v-if="website" :href="website" target="_blank" @click.stop><Icon name="dashicons:admin-site-alt3"/></a>
       <Icon name="uiw:more"/>
     </div>
     <div class="card-image">
