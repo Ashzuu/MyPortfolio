@@ -14,5 +14,4 @@ import ContactSectionComponent from "~/components/ContactSectionComponent.vue";
   </div>
 </template>
 <style>
-  @import url("~/assets/css/style.css");
 </style>
