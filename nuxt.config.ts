@@ -12,26 +12,26 @@ export default defineNuxtConfig({
       meta: [
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { name: 'application-name', content: 'Evan DYNAK - Portfolio' },
-        { name: 'description', content: "Portfolio d'Evan DYNAK, développeur / concepteur & contrebassiste." },
+        { name: 'description', content: "Portfolio d'Evan DYNAK, développeur / concepteur & contrebassiste. Découvrez mes différents projets personnels et n'hésitez pas à me contacter pour quoi que ce soit !" },
         { name: 'keywords', content: 'Musique, Conception, Site Internet, Dijon, Evan DYNAK' },
         { name: 'author', content: 'Evan DYNAK' },
 
         { property: 'og:title', content: 'Evan DYNAK - Portfolio' },
-        { property: 'og:description', content: "Portfolio d'Evan DYNAK, développeur / concepteur & contrebassiste." },
+        { property: 'og:description', content: "Portfolio d'Evan DYNAK, développeur / concepteur & contrebassiste. Découvrez mes différents projets personnels et n'hésitez pas à me contacter pour quoi que ce soit !" },
         { property: 'og:type', content: 'website' },
-        { property: 'og:url', content: 'http://evandynak.me' },
-        { property: 'og:image', content: "http://evandynak.me/img/website-illustration.png" },
+        { property: 'og:url', content: 'https://evandynak.me' },
+        { property: 'og:image', content: "https://evandynak.me/img/portfolio-illustration.png" },
 
         { name: 'twitter:card', content: 'summary_large_image' },
         { name: 'twitter:title', content: 'Evan DYNAK - Portfolio' },
-        { name: 'twitter:description', content: "Portfolio d'Evan DYNAK, développeur / concepteur & contrebassiste." },
-        { name: 'twitter:image', content: 'http://evandynak.me/img/website-illustration.png' }
+        { name: 'twitter:description', content: "Portfolio d'Evan DYNAK, développeur / concepteur & contrebassiste. Découvrez mes différents projets personnels et n'hésitez pas à me contacter pour quoi que ce soit !" },
+        { name: 'twitter:image', content: 'https://evandynak.me/img/portfolio-illustration.png' }
       ],
       link: [
-        { rel: 'canonical', href: "http://evandynak.me" }
+        { rel: 'canonical', href: "https://evandynak.me" },
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'},
       ],
       script: [
-        // JSON-LD structured data: Person + Website
         {
           type: 'application/ld+json',
           innerHTML: JSON.stringify({
@@ -40,7 +40,7 @@ export default defineNuxtConfig({
               {
                 "@type": "Person",
                 "name": "Evan DYNAK",
-                "url": "http://evandynak.me",
+                "url": "https://evandynak.me",
                 "jobTitle": "Développeur / Concepteur",
                 "sameAs": [
                   "https://github.com/ashzuu",
@@ -49,7 +49,7 @@ export default defineNuxtConfig({
               },
               {
                 "@type": "WebSite",
-                "url": "http://evandynak.me",
+                "url": "https://evandynak.me",
                 "name": "Evan DYNAK - Portfolio",
                 "publisher": {
                   "@type": "Person",

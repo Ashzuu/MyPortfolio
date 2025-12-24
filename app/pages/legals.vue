@@ -10,8 +10,8 @@ import Button from "~/components/usable/Button.vue";
       <h3>Éditeur du site</h3>
       <p>
         Nom / Raison sociale : <strong>Evan DYNAK</strong><br>
-        Adresse : <strong>5 Rue de malte 21110 Magny-Sur-Tille</strong><br>
-        Email : <a href="mailto:evan.dynak@bbox.fr">evan.dynak@bbox.fr</a> | Tél : <strong>07 84 67 54 95</strong>
+        Adresse : <strong>Magny-Sur-Tille</strong><br>
+        Email : <a href="mailto:evan.dynak@bbox.fr">evan.dynak@bbox.fr</a>
       </p>
 
       <h3>Directeur de la publication</h3>

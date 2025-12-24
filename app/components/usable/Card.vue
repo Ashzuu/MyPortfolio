@@ -69,7 +69,6 @@
 
   onMounted(() => {
     if (typeof window !== 'undefined') {
-      // Ensure boolean value for isTouch
       isTouch.value = Boolean(('ontouchstart' in window) || (navigator.maxTouchPoints && navigator.maxTouchPoints > 0));
       document.addEventListener('click', onDocumentClick);
       window.addEventListener('close-all-card-controls', onCloseAll as EventListener);
@@ -89,7 +88,6 @@
     <div class="card-controls">
       <a v-if="githubLink" :href="githubLink" target="_blank" @click.stop><Icon name="mdi:github"/></a>
       <a v-if="website" :href="website" target="_blank" @click.stop><Icon name="dashicons:admin-site-alt3"/></a>
-      <Icon name="uiw:more"/>
     </div>
     <div class="card-image">
       <img v-if="image" class="card-img-top" :alt="'Image de décoration pour le projet '+name" :src="image">
