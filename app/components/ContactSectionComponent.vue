@@ -12,13 +12,21 @@
       <div class="coming-soon-box">
         <span class="info-icon"><Icon name="material-symbols:info-outline"/></span>
         <p>
-          Un site dédié à mes services de conception web sera bientôt en ligne pour plus de détails.
-          <br>En attendant, n'hésitez pas à me solliciter directement !
+          Mon site dédié à mes services de conception web est enfin en ligne !
+          <br>Retrouvez-le à l'adresse suivante : <a href="https://website.evandynak.me/" target="_blank">https://website.evandynak.me/</a>
         </p>
       </div>
     </div>
 
     <div class="contact-grid">
+      <a href="https://website.evandynak.me/" class="contact-card primary-glow">
+        <Icon name="fluent-mdl2:web-environment" class="card-icon"/>
+        <div class="card-text">
+          <h3>Site promotionnel</h3>
+        </div>
+      </a>
+
+
       <a href="mailto:evan.dynak@bbox.fr" class="contact-card primary-glow">
         <Icon name="ic:outline-email" class="card-icon"/>
         <div class="card-text">

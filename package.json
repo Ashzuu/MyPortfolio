@@ -19,8 +19,16 @@
     "vue-router": "^4.6.4"
   },
   "devDependencies": {
+    "@iconify-json/arcticons": "^1.2.46",
+    "@iconify-json/dashicons": "^1.2.1",
+    "@iconify-json/fluent-mdl2": "^1.2.1",
+    "@iconify-json/humbleicons": "^1.2.20",
+    "@iconify-json/ic": "^1.2.4",
     "@iconify-json/material-symbols": "^1.2.50",
     "@iconify-json/mdi": "^1.2.3",
+    "@iconify-json/prime": "^1.2.4",
+    "@iconify-json/streamline-freehand": "^1.2.1",
+    "@iconify-json/weui": "^1.2.4",
     "sass": "^1.97.1"
   }
 }
