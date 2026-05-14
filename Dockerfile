@@ -1,18 +1,19 @@
 ARG PORT_EXPOSED=12300
+ARG NODE_VERSION="22-alpine"
 
-FROM node:20-alpine AS deps
+FROM node:${NODE_VERSION} AS deps
 WORKDIR /app
 COPY package.json package-lock.json ./
 RUN npm ci --only=production
 
-FROM node:20-alpine AS builder
+FROM node:${NODE_VERSION} AS builder
 WORKDIR /app
 
 COPY package.json package-lock.json ./
 RUN npm ci
 COPY . .
 RUN npm run build
-FROM node:20-alpine AS runtime
+FROM node:${NODE_VERSION} AS runtime
 WORKDIR /app
 ENV NODE_ENV=production
 COPY --from=deps /app/node_modules ./node_modules
