@@ -21,7 +21,7 @@ jobs:
           run: npm audit
 
         - name: Run Bearer
-          uses: bearer/bearer-action@v3
+          uses: bearer/bearer-action@v2
           with:
             format: sarif
             output: results.sarif
