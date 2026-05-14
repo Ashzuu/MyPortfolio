@@ -21,12 +21,12 @@ jobs:
           run: npm audit
 
         - name: Run Bearer
-          uses: bearer/bearer-action@v2
+          uses: bearer/bearer-action@v3
           with:
             format: sarif
             output: results.sarif
         - name: Upload SARIF file
           if: always()
-          uses: github/codeql-action/upload-sarif@v2
+          uses: github/codeql-action/upload-sarif@v3
           with:
             sarif_file: results.sarif
