@@ -28,14 +28,18 @@
         <div class="languages">
           <CustomBadge v-for="language in props.project.languages" :key="language" :content="language" :style="getRadomStyleBadge()"/>
         </div>
-        <slot name="language-description"/>
+        <div class="content">
+          <slot name="language-description"/>
+        </div>
       </div>
-      <div id="frameworks-container" class="containers">
+      <div v-if="project.frameworks.length > 0" id="frameworks-container" class="containers">
         <h3>Frameworks</h3>
         <div class="framework">
           <CustomBadge v-for="framework in props.project.frameworks" :key="framework" :content="framework" :style="getRadomStyleBadge()"/>
         </div>
-        <slot name="framework-description"/>
+        <div class="content">
+          <slot name="framework-description"/>
+        </div>
       </div>
     </div>
     <div id="right-side" class="part-side">
@@ -44,7 +48,9 @@
       </div>
       <div>
         <h3>Description Détaillée</h3>
-        <slot name="detailled-description"/>
+        <div class="content">
+          <slot name="detailled-description"/>
+        </div>
       </div>
     </div>
   </div>

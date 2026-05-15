@@ -46,8 +46,8 @@ export class ProjectService {
       urlImage:"/img/commercial_illustration.png",
       urlGithub:"https://github.com/Ashzuu/CommercialWebsite",
       status:"Terminé",
-      languages:["Java", "TypeScript", "Neo4J"],
-      frameworks: ["Spring Boot", "Angular"]
+      languages:["TypeScript"],
+      frameworks: ["NuxtJS"]
     },
     {
       id:5,
