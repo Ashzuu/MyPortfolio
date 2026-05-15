@@ -1,53 +1,22 @@
 <script setup lang="ts">
   import { ref, onMounted, onBeforeUnmount } from 'vue';
   import Badge from "~/components/usable/Badge.vue";
+  import type {Project} from "~/models/Project";
 
-  defineProps({
-    name: {
-      type: String,
-      required: true
-    },
-    path : {
-      type: String,
-      required: true
-    },
-    description: {
-      type: String,
-      required: true
-    },
-    image: {
-      type: String,
-      default: ''
-    },
-    githubLink: {
-      type: String,
-      default: ''
-    },
-    status: {
-      type: String,
-      required: true
-    },
-    website: {
-      type: String,
-      default: ''
-    }
-  })
-
+  const props = defineProps<{
+    project: Project
+  }>();
   const controlsVisible = ref(false);
   const isTouch = ref(false);
   const cardRoot = ref<HTMLElement | null>(null);
 
   const onCardClick = (e: MouseEvent) => {
-    // Only handle toggle on touch devices
     if (!isTouch.value) return;
-    // Prevent the document click listener from immediately closing
     e.stopPropagation();
 
-    // If clicking on a control link, let it behave normally
     const target = e.target as HTMLElement | null;
     if (target && target.closest('.card-controls a')) return;
 
-    // Close other open cards first
     if (!controlsVisible.value) {
       if (typeof window !== 'undefined') {
         window.dispatchEvent(new CustomEvent('close-all-card-controls'));
@@ -91,20 +60,23 @@
 
   <div ref="cardRoot" class="card" :class="{ 'controls-visible': controlsVisible }" @click="onCardClick">
     <div class="card-controls">
-      <a v-if="githubLink" :href="githubLink" target="_blank" @click.stop><Icon name="mdi:github"/></a>
-      <a v-if="website" :href="website" target="_blank" @click.stop><Icon name="dashicons:admin-site-alt3"/></a>
+      <a v-if="props.project.urlGithub" :href="props.project.urlGithub" target="_blank" @click.stop><Icon name="mdi:github"/></a>
+      <a v-if="props.project.urlWebsite" :href="props.project.urlWebsite" target="_blank" @click.stop><Icon name="dashicons:admin-site-alt3"/></a>
     </div>
     <div class="card-image">
-      <img v-if="image" class="card-img-top" :alt="'Image de décoration pour le projet '+name" :src="image">
+      <img v-if="props.project.urlImage" class="card-img-top" :alt="'Image de décoration pour le projet '+ props.project.name" :src="props.project.urlImage">
     </div>
     <NuxtLink
         v-slot="{ navigate }"
-        :to="'/projects/' + path"
+        :to="{
+          path: '/projects/' + props.project.path,
+          state: { project: props.project }
+          }"
         custom>
       <div class="card-content" role="link" @click="navigate">
-        <Badge :class="status == 'En cours' ? 'en-cours' : status == 'Terminé' ? 'termine': status == 'Archivé' ? 'archive' : ''">{{status}}</Badge>
-        <h3>{{name}}</h3>
-        <p>{{description}}</p>
+        <Badge :class="props.project.status == 'En cours' ? 'en-cours' : props.project.status == 'Terminé' ? 'termine': props.project.status == 'Archivé' ? 'archive' : ''">{{props.project.status}}</Badge>
+        <h3>{{props.project.name}}</h3>
+        <p>{{props.project.description}}</p>
       </div>
     </NuxtLink>
 

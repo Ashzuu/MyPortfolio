@@ -1,0 +1,89 @@
+#project-container {
+  background-color: var(--card-background-color);
+  width: 100dvw;
+  height: 100dvh;
+  min-height: 100dvh;
+}
+
+#project-container h2 {
+  margin: 0;
+}
+
+#project-container header {
+  flex-direction: column;
+  width: 100%;
+}
+
+#home-button-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 8%;
+  padding-left: 15px;
+}
+
+#project-container {
+  width: 100%;
+  display: flex;
+}
+
+.part-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+header h2 {
+  font-size: 62px;
+  text-align: center;
+  margin: 0;
+  font-weight: 300;
+}
+
+header p {
+  width: 60%;
+  margin: 0;
+  font-size: 28px;
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 32px;
+  width: 100%;
+}
+
+.containers {
+  width: 100%;
+}
+
+.first-part-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30%;
+}
+
+.buttons-container {
+  display: flex;
+  gap: 10px;
+}
+
+.languages, .framework {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+#image-container img {
+  max-height: 100%;
+}

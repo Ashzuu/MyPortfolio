@@ -1,0 +1,60 @@
+.custom-badge-container {
+  border-radius: 8px;
+  padding: 5px 10px;
+  width: fit-content;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 6px 0 rgba(0, 0, 0, 0.19);
+  .text-badge {
+    font-size: 22px;
+  }
+}
+
+
+
+
+.base {
+  color: white;
+  background-color: rgb(194 194 194 / 0.1);
+  border: 1px solid white;
+}
+
+.green {
+  --green-theme-color: 30 128 30;
+  color: rgb(var(--green-theme-color));
+  background-color: rgb(var(--green-theme-color) / 0.1);
+  border: 1px solid rgb(var(--green-theme-color));
+}
+
+.red {
+  --red-theme-color: 255 30 30;
+  color: rgb(var(--red-theme-color));
+  background-color: rgb(var(--red-theme-color) / 0.1);
+  border: 1px solid rgb(var(--red-theme-color));
+}
+
+.blue {
+  --blue-theme-color: 30 30 255;
+  color: rgb(var(--blue-theme-color));
+  background-color: rgb(var(--blue-theme-color) / 0.1);
+  border: 1px solid rgb(var(--blue-theme-color));
+}
+
+.purple {
+  --purple-theme-color: 194 21 237;
+  color: rgb(var(--purple-theme-color));
+  background-color: rgb(var(--purple-theme-color) / 0.1);
+  border: 1px solid rgb(var(--purple-theme-color));
+}
+
+.orange {
+  --orange-theme-color: 237 104 21;
+  color: rgb(var(--orange-theme-color));
+  background-color: rgb(var(--orange-theme-color)/0.1);
+  border: 1px solid rgb(var(--orange-theme-color));
+}
+
+.aqua {
+  --aqua-theme-color: 21 223 237;
+  color: rgb(var(--aqua-theme-color));
+  background-color: rgb(var(--aqua-theme-color) / 0.1);
+  border: 1px solid rgb(var(--aqua-theme-color));
+}

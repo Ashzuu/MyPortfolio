@@ -5,7 +5,7 @@ import Button from "~/components/usable/Button.vue";
 <template>
   <section id="legal-section-container">
     <h2 class="synth-wave-color">Mentions légales</h2>
-    <Button link-redirect="/" variant="secondary" icon-name="material-symbols-light:home-rounded">Accueil</Button>
+    <Button link-redirect="/" variant="secondary" icon-name="lucide:home">Accueil</Button>
     <div class="legal-content">
       <h3>Éditeur du site</h3>
       <p>
