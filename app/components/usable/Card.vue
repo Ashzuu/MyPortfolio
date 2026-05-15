@@ -69,7 +69,7 @@
     <NuxtLink
         v-slot="{ navigate }"
         :to="{
-          path: '/projects/' + props.project.path
+          path: '/projects/' + props.project.path + '#'
           }"
         custom>
       <div class="card-content" role="link" @click="navigate">
