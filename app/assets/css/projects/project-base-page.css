@@ -4,7 +4,7 @@
 
 #project-container {
   width: 100dvw;
-  min-height: 100dvh;
+  min-height: 80dvh;
 }
 
 #project-container h2 {
@@ -27,6 +27,18 @@
 #project-container {
   width: 100%;
   display: flex;
+}
+
+#left-side, #right-side {
+  gap: 40px;
+}
+
+#return-arrow {
+  position: absolute;
+  cursor: pointer;
+  top: 35px;
+  left: 35px;
+  font-size: 50px;
 }
 
 .part-side {
@@ -59,7 +71,7 @@ header p {
 
 h3 {
   text-align: center;
-  text-transform: uppercase;
+  font-variant-caps: small-caps;
   font-weight: 100;
   font-size: 32px;
   width: 100%;
@@ -98,4 +110,8 @@ h3 {
 
 #caroussel-container {
   width: 100%;
+}
+
+#caroussel-container h3 {
+  margin: 3% 0;
 }

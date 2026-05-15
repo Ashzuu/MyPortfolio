@@ -1,8 +1,10 @@
 <script setup lang="ts">
   import BaseComponent from "~/components/projects/BaseComponent.vue";
   import {ProjectService} from "~/services/ProjectService";
+  import Caroussel from "~/components/usable/Caroussel.vue";
 
   const service: ProjectService = new ProjectService();
+  const imgs:string[] = ["/img/ds-controles/img.png", "/img/ds-controles/img_1.png", "/img/ds-controles/img_2.png"];
 </script>
 
 <template>
@@ -24,6 +26,9 @@
         <li>Il devait être bien référencé, que ce soit pour les mots clés ou la région de recherce, sur les moteurs de recherches traditionnels tels que Google / Bing.</li>
         <li>Il devait être simple d'utilisation, fluide, et correspondre à l'identité de l'entreprise.</li>
       </ul>
+    </template>
+    <template #caroussel>
+      <Caroussel :images="imgs"/>
     </template>
   </BaseComponent>
 </template>

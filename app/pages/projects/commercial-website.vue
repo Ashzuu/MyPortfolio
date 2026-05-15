@@ -45,7 +45,7 @@
       </ul>
     </template>
     <template #caroussel>
-      <Caroussel :images="imgs"></Caroussel>
+      <Caroussel :images="imgs"/>
     </template>
   </BaseComponent>
 </template>

@@ -13,6 +13,15 @@
 </script>
 
 <template>
+  <div id="return-arrow">
+    <NuxtLink
+        v-slot="{ navigate }"
+        to="/#project-section-container"
+        custom
+    >
+      <Icon name="icon-park-outline:left-c" @click="navigate"/>
+    </NuxtLink>
+  </div>
   <div id="detail-project">
     <div id="project-container">
       <div id="left-side" class="part-side">
@@ -56,6 +65,7 @@
       </div>
     </div>
     <div id="caroussel-container">
+      <h3>Galerie</h3>
       <slot name="caroussel"/>
     </div>
   </div>
