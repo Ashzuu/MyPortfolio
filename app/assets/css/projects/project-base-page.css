@@ -1,5 +1,8 @@
-#project-container {
+#detail-project {
   background-color: var(--card-background-color);
+}
+
+#project-container {
   width: 100dvw;
   min-height: 100dvh;
 }
@@ -31,7 +34,7 @@
   flex-direction: column;
   align-items: center;
   width: 50%;
-  padding: 2%;
+  padding: 2% 2% 0 2%;
 }
 
 header {
@@ -91,4 +94,8 @@ h3 {
 
 .content {
   font-size: 20px;
+}
+
+#caroussel-container {
+  width: 100%;
 }

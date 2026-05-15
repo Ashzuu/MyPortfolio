@@ -1,8 +1,10 @@
 <script setup lang="ts">
   import BaseComponent from "~/components/projects/BaseComponent.vue";
   import {ProjectService} from "~/services/ProjectService";
+  import Caroussel from "~/components/usable/Caroussel.vue";
 
   const service: ProjectService = new ProjectService();
+  const imgs:string[] = ["/img/commercial-website/img.png", "/img/commercial-website/img_1.png", "/img/commercial-website/img_2.png"];
 </script>
 
 <template>
@@ -41,6 +43,9 @@
         <li>Création d'outils sur mesure et d'applications web pour des besoins métiers spécifiques (gestion interne, bases de données, etc.).</li>
         <li>Le site sert à souligner une approche "sur mesure", promettant une écoute active des besoins.</li>
       </ul>
+    </template>
+    <template #caroussel>
+      <Caroussel :images="imgs"></Caroussel>
     </template>
   </BaseComponent>
 </template>

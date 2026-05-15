@@ -1,8 +1,10 @@
 <script setup lang="ts">
   import BaseComponent from "~/components/projects/BaseComponent.vue";
   import {ProjectService} from "~/services/ProjectService";
+  import Caroussel from "~/components/usable/Caroussel.vue";
 
   const service: ProjectService = new ProjectService();
+  const imgs: string[] = ["/img/portfolio/home.png", "/img/portfolio/home_3.png", "/img/portfolio/home_2.png"];
 </script>
 
 <template>
@@ -30,7 +32,9 @@
     <template #detailled-description>
       <p>Ce site a pour but de me présenter d'un point de vue plutôt personnel, mes passions, mes hobbies, mais surtout mes réalisations informatiques, qu'elles aient été profesionnelles ou non.</p>
       <p>L'objectif est de se promouvoir à travers un site Internet simple d'utilisation, fluide, et qui correspond à mon identité.</p>
-
+    </template>
+    <template #caroussel>
+      <Caroussel :images="imgs"/>
     </template>
   </BaseComponent>
 </template>
