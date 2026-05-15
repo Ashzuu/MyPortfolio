@@ -7,6 +7,10 @@
       type: String,
       required: true
     },
+    path : {
+      type: String,
+      required: true
+    },
     description: {
       type: String,
       required: true
@@ -84,6 +88,7 @@
 </script>
 
 <template>
+
   <div ref="cardRoot" class="card" :class="{ 'controls-visible': controlsVisible }" @click="onCardClick">
     <div class="card-controls">
       <a v-if="githubLink" :href="githubLink" target="_blank" @click.stop><Icon name="mdi:github"/></a>
@@ -92,11 +97,16 @@
     <div class="card-image">
       <img v-if="image" class="card-img-top" :alt="'Image de décoration pour le projet '+name" :src="image">
     </div>
-    <div class="card-content">
-      <Badge :class="status == 'En cours' ? 'en-cours' : status == 'Terminé' ? 'termine': status == 'Archivé' ? 'archive' : ''">{{status}}</Badge>
-      <h3>{{name}}</h3>
-      <p>{{description}}</p>
-    </div>
+    <NuxtLink
+        v-slot="{ navigate }"
+        :to="'/projects/' + path"
+        custom>
+      <div class="card-content" role="link" @click="navigate">
+        <Badge :class="status == 'En cours' ? 'en-cours' : status == 'Terminé' ? 'termine': status == 'Archivé' ? 'archive' : ''">{{status}}</Badge>
+        <h3>{{name}}</h3>
+        <p>{{description}}</p>
+      </div>
+    </NuxtLink>
 
   </div>
 </template>
