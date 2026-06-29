@@ -1,5 +1,5 @@
 #first-section-container {
-
+  opacity: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,13 +9,14 @@
 
 #first-section-container h1 {
   font-size: 76px;
-  margin: 0;
+  margin: 10px 0 0 0;
 }
 
 #first-section-content {
   width: 40%;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 #first-section-badge-container {
@@ -26,11 +27,13 @@
 }
 
 .description-content {
-  font-size: 16px;
+  width: 50dvw;
+  font-size: 28px;
   color: var(--font-color-very-not-important);
 }
 
 #buttons-section-container {
+  width: 50dvw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -60,8 +63,12 @@
     width: 80%;
   }
 
+  #first-section-badge-container {
+    margin-bottom: 15px;
+  }
+
   #first-section-container h1 {
-    font-size: 14dvw;
+    font-size: 3rem;
   }
 
   #first-section-container .description-content {
