@@ -1,6 +1,6 @@
 :root {
   --primary-color: #ffffff;
-  --enhanced-color-primary: #aa00ff;
+  --enhanced-color-primary: rgb(170 0 255);
   --enhanced-background-color-primary: rgba(155, 42, 142, 0.18);
   --enhanced-color-secondary: #00FFE5FF;
   --enhanced-background-color-secondary: rgba(0, 255, 229, 0.18);
