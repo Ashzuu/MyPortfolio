@@ -4,12 +4,29 @@
   align-items: center;
   justify-content: space-between;
   width: 30%;
-  height: 350px;
+  min-width: 350px;
+  max-width: 450px;
+  aspect-ratio: 1/1;
   border-radius: 8px;
   background: var(--card-background-color);
   position: relative;
   overflow: hidden;
   transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  p {
+    font-size: 1.4rem;
+    margin: 0;
+  }
+  h3 {
+    font-size: 2rem;
+    margin: 0;
+  }
 }
 
 .card-image img {
@@ -103,8 +120,8 @@
 
 @media (max-width: 640px) {
   .card {
-    width: 100%;
-    min-height: 300px;
+    width: 80%;
+    min-height: 150px;
     height: auto;
     margin-bottom: 16px;
   }

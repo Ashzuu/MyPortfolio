@@ -12,6 +12,7 @@
 
 .cards-container {
   display: flex;
+  justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
   width: 70%;
@@ -37,7 +38,7 @@
 
 @media screen and (max-width: 400px) {
   #project-section-container h2 {
-    font-size: 24px;
+    font-size: 48px;
     margin-bottom: 50px;
   }
 }
