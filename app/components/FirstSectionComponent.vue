@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { onMounted } from 'vue';
 import Badge from "~/components/usable/Badge.vue";
 import Button from "~/components/usable/Button.vue";
 
@@ -59,9 +60,11 @@ function startAnimationTitleAndShowing(){
   }
 }
 
-if(import.meta.client){
-  window.onload = startAnimationTitleAndShowing;
-}
+onMounted(() => {
+  if(import.meta.client){
+    startAnimationTitleAndShowing();
+  }
+});
 
 </script>
 

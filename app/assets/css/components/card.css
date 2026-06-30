@@ -121,7 +121,7 @@
 @media (max-width: 640px) {
   .card {
     width: 80%;
-    min-height: 150px;
+    min-width: fit-content;
     height: auto;
     margin-bottom: 16px;
   }

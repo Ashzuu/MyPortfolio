@@ -169,6 +169,10 @@
 
 /* --- Responsive --- */
 @media screen and (max-width: 768px) {
+  .main-text {
+    font-size: 18px;
+  }
+
   #contact-section-container h2 {
     font-size: 42px;
   }
@@ -207,5 +211,12 @@
   #contact-section-container {
     width: 90%;
     padding: 0 5%;
+  }
+
+  .coming-soon-box {
+    width: 100%;
+    p {
+      font-size: 16px;
+    }
   }
 }
