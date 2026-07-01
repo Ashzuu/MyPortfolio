@@ -131,14 +131,8 @@
 }
 
 @media (max-width: 640px) {
-  .card-image {
-    height: 40%;
-    aspect-ratio: auto;
-  }
-
   .card {
     width: 80%;
-    min-width: fit-content;
     height: auto;
     margin-bottom: 16px;
   }
