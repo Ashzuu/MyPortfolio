@@ -23,5 +23,5 @@ import Field from "~/components/usable/Field.vue";
 </template>
 
 <style scoped>
-@import url("~/assets/css/about-section.css");
+@import url("~/assets/css/home-page/about-section.css");
 </style>

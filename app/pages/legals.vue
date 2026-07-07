@@ -55,6 +55,6 @@ import Button from "~/components/usable/Button.vue";
 </template>
 
 <style scoped>
-@import url("~/assets/css/mentions-legales.css");
+@import url("~/assets/css/home-page/mentions-legales.css");
 </style>
 

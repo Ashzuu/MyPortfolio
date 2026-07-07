@@ -15,5 +15,5 @@
 </template>
 
 <style scoped>
-@import url("~/assets/css/project-section.css");
+@import url("~/assets/css/home-page/project-section.css");
 </style>
