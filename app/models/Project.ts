@@ -9,4 +9,5 @@ export interface Project {
   urlImage?: string;
   urlGithub?: string;
   status: string;
+  img: string[];
 }

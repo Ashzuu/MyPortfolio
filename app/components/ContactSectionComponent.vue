@@ -62,5 +62,5 @@
 </template>
 
 <style scoped>
-@import url("~/assets/css/contact-section.css");
+@import url("~/assets/css/home-page/contact-section.css");
 </style>

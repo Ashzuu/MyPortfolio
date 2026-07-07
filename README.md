@@ -6,7 +6,7 @@ A modern, responsive portfolio website built with **Nuxt 4** and **Vue 3**.
 
 - 🎨 **Modern UI/UX** - Clean and responsive design using Vue 3 components
 - 🎵 **Music Section** - Dedicated space to showcase your music or audio projects
-- 🚀 **Projects Showcase** - Display your projects with detailed information
+- 🚀 **SummaryProjects Showcase** - Display your projects with detailed information
 - 📧 **Contact Section** - Easy-to-use contact form for visitors
 - ⚡ **High Performance** - Built on Nuxt 4 with optimized bundle size
 - 📱 **Fully Responsive** - Mobile-first design that works on all devices
@@ -129,25 +129,34 @@ The Docker setup uses a **multi-stage build** for optimal performance:
 
 ```
 portfolio/
-├── app/                          # Main application files
+├── app/                         # Main application files
 │   ├── app.vue                  # Root component
 │   ├── assets/                  # Static assets
-│   │   └── css/                # Stylesheets
+│   │   └── css/                 # Stylesheets
+│   │   │   └── components/      # Component-specific styles
+│   │   │   │   └── ...
 │   │       ├── style.css        # Global styles
 │   │       ├── contact-section.css
-│   │       ├── music-section.css
 │   │       ├── primary-section.css
 │   │       ├── project-section.css
 │   │       └── components/      # Component-specific styles
 │   └── components/              # Vue components
 │       ├── FirstSectionComponent.vue      # Hero/intro section
-│       ├── ProjectSectionComponent.vue    # Projects showcase
-│       ├── MusicSectionComponent.vue      # Music section
+│       ├── ProjectSectionComponent.vue    # SummaryProjects showcase
 │       ├── ContactSectionComponent.vue    # Contact form
 │       └── usable/              # Reusable components
 │           ├── Badge.vue
-│           └── Button.vue
-├── public/                      # Static files
+│           ├── Button.vue
+│           ├── Card.vue
+│           ├── Caroussel.vue
+│           ├── Field.vue
+│           └── PartInfo.vue
+│   └── pages/                  # Nuxt pages
+│   │   └── projects/
+│   │   |    └── ...            # Project details page
+│   │   └── index.vue           # Main page
+│   │   └── legals.vue          # Legal information page
+├── public/                     # Static files
 ├── nuxt.config.ts              # Nuxt configuration
 ├── tsconfig.json               # TypeScript configuration
 ├── eslint.config.mjs           # ESLint configuration
@@ -184,8 +193,7 @@ TypeScript is configured in `tsconfig.json` for type safety across the project.
 ### Adding Content
 
 1. **First Section** - Edit `FirstSectionComponent.vue` to customize your intro/hero section
-2. **Projects** - Modify `ProjectSectionComponent.vue` to showcase your projects
-3. **Music** - Update `MusicSectionComponent.vue` for your music content
+2. **SummaryProjects** - Modify `ProjectSectionComponent.vue` to showcase your projects
 4. **Contact** - Customize `ContactSectionComponent.vue` with your contact information
 
 ### Styling

@@ -2,13 +2,14 @@
   import BaseComponent from "~/components/projects/BaseComponent.vue";
   import {ProjectService} from "~/services/ProjectService";
   import Caroussel from "~/components/usable/Caroussel.vue";
+  import type {Project} from "~/models/Project";
 
   const service: ProjectService = new ProjectService();
-  const imgs:string[] = ["/img/tyradex/img.png","/img/tyradex/img_1.png", "/img/tyradex/img_2.png", "/img/tyradex/img_3.png"];
+  const project : Project = service.specificProject(1)!;
 </script>
 
 <template>
-  <BaseComponent :project="service.specificProject(1)">
+  <BaseComponent :project="project">
     <template #language-description>
       <p>Pour ce projet, un éventail technologique complet a été utilisé pour répondre aux différents besoins de l'API :</p>
       <ul>
@@ -29,7 +30,7 @@
       <p>Créée en collaboration avec Yarkis, l'API permet de récupérer facilement des fiches détaillées, des formes régionales ou des listes par générations. Les données, très riches, sont issues de sources fiables telles que Poképédia et Serebii. L'outil s'accompagne d'un Pokédex interactif et d'une documentation claire pour faciliter son utilisation au maximum.</p>
     </template>
     <template #caroussel>
-      <Caroussel :images="imgs"/>
+      <Caroussel :images="project.img"/>
     </template>
   </BaseComponent>
 </template>

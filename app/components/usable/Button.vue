@@ -16,7 +16,13 @@
 </script>
 
 <template>
-  <a class="button" :href="linkRedirect" >
+  <a v-if="linkRedirect" class="button" :href="linkRedirect">
+    <span class="button-content" :class="variant">
+      <slot/>
+      <Icon v-if="iconName" :name="iconName" class="btn-icon"/>
+    </span>
+  </a>
+  <a v-else class="button">
     <span class="button-content" :class="variant">
       <slot/>
       <Icon v-if="iconName" :name="iconName" class="btn-icon"/>

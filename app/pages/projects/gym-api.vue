@@ -2,13 +2,14 @@
   import BaseComponent from "~/components/projects/BaseComponent.vue";
   import {ProjectService} from "~/services/ProjectService";
   import Caroussel from "~/components/usable/Caroussel.vue";
+  import type {Project} from "~/models/Project";
 
   const service: ProjectService = new ProjectService();
-  const imgs = [];
+  const project: Project = service.specificProject(2)!;
 </script>
 
 <template>
-  <BaseComponent :project="service.specificProject(2)">
+  <BaseComponent :project="project">
     <template #language-description>
       <p>La gestion rigoureuse des données est au cœur de cette API :</p>
       <ul>
@@ -28,7 +29,7 @@
       <p>C'est un outil qui se destine à être le "moteur" en arrière-plan d'applications tierces (comme des planificateurs d'entraînement ou des tableaux de bord). Elle permet de filtrer facilement les exercices par muscle ciblé, par difficulté ou par matériel requis.</p>
     </template>
     <template #caroussel>
-      <Caroussel :images="imgs"/>
+      <Caroussel :images="project.img"/>
     </template>
   </BaseComponent>
 </template>
