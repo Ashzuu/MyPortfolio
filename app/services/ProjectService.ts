@@ -88,15 +88,36 @@ export class ProjectService {
       languages:["TypeScript", "Java"],
       frameworks: ["Angular", "Spring Boot"],
       img: [],
+    },
+    {
+      id:8,
+      name:"Challenge-Dev",
+      path:"challengedev",
+      description:"Projet Github qui recense tous mes challenges que j'ai fais sur une plateforme très connue, mais que je ne citerai pas ici (pas difficile à trouver, mais si vous le savez merci de ne pas le révéler)",
+      urlGithub:"https://github.com/Ashzuu/Challenge-Dev",
+      status:"En cours",
+      languages:[],
+      frameworks: [],
+      img: [],
     }
-  ]
+  ];
+
+  private shownProjects: Ref<Project[]> = ref(this.projects.slice(0,6));
 
   /**
    * Get all projects stored in the service.
    * @return All projects
    */
-  public get Projects():Project[]{
-    return this.projects;
+  public get SummaryProjects():Project[]{
+    return this.shownProjects.value;
+  }
+
+  public changeProjectMode(){
+    if(this.shownProjects.value.length === 6) {
+      this.shownProjects.value = this.projects;
+    } else {
+      this.shownProjects.value = this.projects.slice(0,6);
+    }
   }
 
   /**

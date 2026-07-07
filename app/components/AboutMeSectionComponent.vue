@@ -4,7 +4,7 @@ import Field from "~/components/usable/Field.vue";
 </script>
 
 <template>
-  <section id="music-section-container">
+  <section id="about-section-container">
     <h2 class="synth-wave-color">Evan DYNAK</h2>
     <p class="secret-text">(Désolé ça fait très égocentrique mais c'est pour le référencement)</p>
     <div class="about-me-section-container">
