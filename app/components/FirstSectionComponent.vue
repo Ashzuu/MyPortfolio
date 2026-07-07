@@ -88,5 +88,5 @@ onMounted(() => {
 </template>
 
 <style scoped>
-@import url("~/assets/css/primary-section.css");
+@import url("~/assets/css/home-page/primary-section.css");
 </style>

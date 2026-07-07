@@ -46,7 +46,7 @@
   flex-direction: column;
   align-items: center;
   width: 50%;
-  padding: 2% 2% 0 2%;
+  padding: 80px 2% 0 2%;
 }
 
 header {
@@ -114,4 +114,30 @@ h3 {
 
 #caroussel-container h3 {
   margin: 3% 0;
+}
+
+@media screen and (max-width: 1280px) {
+  #project-container {
+    flex-direction: column;
+  }
+
+  .part-side {
+    width: 96%;
+  }
+
+  #project-container h2 {
+    z-index: 10;
+    text-shadow: 2px 0 #000000, -2px 0 #000000, 0 2px #000000, 0 -2px #000000,
+    2px 2px #000000, -2px -2px #000000, 2px -2px #000000, -2px 2px #000000;
+  }
+
+  #image-container img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    aspect-ratio: auto;
+    z-index: 0;
+  }
+
 }

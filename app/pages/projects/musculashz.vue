@@ -2,13 +2,14 @@
   import BaseComponent from "~/components/projects/BaseComponent.vue";
   import {ProjectService} from "~/services/ProjectService";
   import Caroussel from "~/components/usable/Caroussel.vue";
+  import type {Project} from "~/models/Project";
 
   const service: ProjectService = new ProjectService();
-  const imgs = [];
+  const project:Project = service.specificProject(3)!;
 </script>
 
 <template>
-  <BaseComponent :project="service.specificProject(3)">
+  <BaseComponent :project="project">
     <template #language-description>
       <p>Pour cette interface utilisateur riche, la sécurité du code est primordiale :</p>
       <ul>
@@ -26,7 +27,7 @@
       <p>L'aspect intéressant de ce projet est qu'il s'intègre et consomme ma propre interface <strong>GymExercisesAPI</strong>. Cela démontre ma capacité à concevoir et faire communiquer un écosystème logiciel complet, allant de la conception de la base de données jusqu'à l'affichage d'une interface utilisateur dynamique et intuitive.</p>
     </template>
     <template #caroussel>
-      <Caroussel :images="imgs"/>
+      <Caroussel :images="project.img"/>
     </template>
   </BaseComponent>
 </template>

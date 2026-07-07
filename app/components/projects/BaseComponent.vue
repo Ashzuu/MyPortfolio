@@ -72,5 +72,5 @@
 </template>
 
 <style scoped>
-  @import url('~/assets/css/projects/project-base-page.css');
+  @import url('~/assets/css/home-page/projects/project-base-page.css');
 </style>

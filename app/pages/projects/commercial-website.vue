@@ -2,13 +2,14 @@
   import BaseComponent from "~/components/projects/BaseComponent.vue";
   import {ProjectService} from "~/services/ProjectService";
   import Caroussel from "~/components/usable/Caroussel.vue";
+  import type {Project} from "~/models/Project";
 
   const service: ProjectService = new ProjectService();
-  const imgs:string[] = ["/img/commercial-website/img.png", "/img/commercial-website/img_1.png", "/img/commercial-website/img_2.png"];
+  const project: Project = service.specificProject(4)!;
 </script>
 
 <template>
-  <BaseComponent :project="service.specificProject(4)">
+  <BaseComponent :project="project">
     <template #language-description>
       <p>TypeScript est une surcouche de JavaScript, ajoutant un système de typage statique strict au JavaScript classique.</p>
 
@@ -45,7 +46,7 @@
       </ul>
     </template>
     <template #caroussel>
-      <Caroussel :images="imgs"/>
+      <Caroussel :images="project.img"/>
     </template>
   </BaseComponent>
 </template>

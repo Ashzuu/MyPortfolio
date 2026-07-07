@@ -1,11 +1,11 @@
-#music-section-container {
+#about-section-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-#music-section-container h2 {
+#about-section-container h2 {
   font-size: 62px;
   margin: 0;
   text-align: center;
@@ -43,6 +43,8 @@
   .about-me-info-part, .about-me-music-part {
     display: flex;
     flex-direction: column;
+    width: 45%;
+
   }
 }
 
@@ -58,13 +60,13 @@
     width: 80%;
   }
 
-  #music-section-container {
+  #about-section-container {
     margin-top: 100px;
   }
 }
 
 @media screen and (max-width: 400px) {
-  #music-section-container h2 {
+  #about-section-container h2 {
     font-size: 48px;
   }
 }
