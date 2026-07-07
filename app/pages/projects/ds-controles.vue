@@ -2,13 +2,14 @@
   import BaseComponent from "~/components/projects/BaseComponent.vue";
   import {ProjectService} from "~/services/ProjectService";
   import Caroussel from "~/components/usable/Caroussel.vue";
+  import type {Project} from "~/models/Project";
 
   const service: ProjectService = new ProjectService();
-  const imgs:string[] = ["/img/ds-controles/img.png", "/img/ds-controles/img_1.png", "/img/ds-controles/img_2.png"];
+  const project: Project = service.specificProject(6)!;
 </script>
 
 <template>
-  <BaseComponent :project="service.specificProject(6)">
+  <BaseComponent :project="project">
     <template #language-description>
       <p>Le choix HTML/CSS & JavaScript, donc web "natif" s'est porté sur le fait que :</p>
 
@@ -28,7 +29,7 @@
       </ul>
     </template>
     <template #caroussel>
-      <Caroussel :images="imgs"/>
+      <Caroussel :images="project.img"/>
     </template>
   </BaseComponent>
 </template>

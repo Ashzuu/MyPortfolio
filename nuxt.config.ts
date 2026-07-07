@@ -3,6 +3,14 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ['~/assets/css/style.css'],
   modules: ['@nuxt/eslint', '@nuxt/fonts', '@nuxt/icon'],
+  vite: {
+    optimizeDeps: {
+      include: [
+        '@vue/devtools-core',
+        '@vue/devtools-kit',
+      ]
+    }
+  },
   app: {
     head: {
       title: "Evan DYNAK - Portfolio",
