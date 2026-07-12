@@ -15,9 +15,9 @@ function isMobile() {
 
 const handleMouseMove = (event: MouseEvent) => {
   if (cursorRef.value) {
-    cursorRef.value.style.visibility = VISIBILITY
-    cursorRef.value.style.top = event.pageY - SIZE_CURSOR / 2 + 'px'
-    cursorRef.value.style.left = event.pageX - SIZE_CURSOR / 2 + 'px'
+    cursorRef.value.style.visibility = VISIBILITY;
+    cursorRef.value.style.top = event.clientY - SIZE_CURSOR / 2 + 'px';
+    cursorRef.value.style.left = event.clientX - SIZE_CURSOR / 2 + 'px';
   }
 }
 
@@ -51,9 +51,9 @@ const handleMouseOver = (event: MouseEvent) => {
 
 onMounted(() => {
   if (cursorRef.value && !isMobile()) {
-    cursorRef.value.style.width = SIZE_CURSOR + "px"
-    window.addEventListener('mousemove', handleMouseMove)
-    window.addEventListener('mouseover', handleMouseOver)
+    cursorRef.value.style.width = SIZE_CURSOR + "px";
+    window.addEventListener('mousemove', handleMouseMove);
+    window.addEventListener('mouseover', handleMouseOver);
   }
 })
 
@@ -78,7 +78,7 @@ onUnmounted(() => {
   #mouse-decoration {
     z-index: 100;
     pointer-events: none;
-    position: absolute;
+    position: fixed;
     visibility: hidden;
     aspect-ratio: 1/1;
     border-radius: 100%;
