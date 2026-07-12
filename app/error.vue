@@ -27,8 +27,8 @@ function isMobile() {
 const handleMouseMove = (event: MouseEvent) => {
   if (cursorRef.value) {
     cursorRef.value.style.visibility = VISIBILITY
-    cursorRef.value.style.top = event.pageY - SIZE_CURSOR / 2 + 'px'
-    cursorRef.value.style.left = event.pageX - SIZE_CURSOR / 2 + 'px'
+    cursorRef.value.style.top = event.clientY - SIZE_CURSOR / 2 + 'px'
+    cursorRef.value.style.left = event.clientX - SIZE_CURSOR / 2 + 'px'
   }
 }
 

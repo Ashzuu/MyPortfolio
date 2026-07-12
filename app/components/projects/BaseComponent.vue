@@ -64,7 +64,7 @@
         </div>
       </div>
     </div>
-    <div id="caroussel-container">
+    <div v-if="props.project.img.length > 0" id="caroussel-container">
       <h3>Galerie</h3>
       <slot name="caroussel"/>
     </div>
