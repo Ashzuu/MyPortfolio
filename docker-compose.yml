@@ -9,6 +9,7 @@ services:
     environment:
       - NODE_ENV=production
       - HOST=0.0.0.0
+      - PORT=12300
     networks:
       - proxy
     restart: unless-stopped
