@@ -7,9 +7,7 @@
 </script>
 
 <template>
-  <ProjectsBaseComponent :project="project">
-
-  </ProjectsBaseComponent>
+  <ProjectsBaseComponent :project="project" />
 </template>
 
 <style scoped>

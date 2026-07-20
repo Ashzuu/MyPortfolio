@@ -27,7 +27,7 @@ const prevSlide = () => {
   }
 };
 
-const getSlideClass = (index:any) => {
+const getSlideClass = (index: number) => {
   const total = props.images.length;
   let state:string = 'hidden';
 

@@ -60,8 +60,8 @@
 
   <div ref="cardRoot" class="card" :class="{ 'controls-visible': controlsVisible }" @click="onCardClick">
     <div class="card-controls">
-      <a v-if="props.project.urlGithub" :href="props.project.urlGithub" target="_blank" @click.stop><Icon name="mdi:github"/></a>
-      <a v-if="props.project.urlWebsite" :href="props.project.urlWebsite" target="_blank" @click.stop><Icon name="dashicons:admin-site-alt3"/></a>
+      <a v-if="props.project.urlGithub" :href="props.project.urlGithub" target="_blank" rel="noopener noreferrer" @click.stop><Icon name="mdi:github"/></a>
+      <a v-if="props.project.urlWebsite" :href="props.project.urlWebsite" target="_blank" rel="noopener noreferrer" @click.stop><Icon name="dashicons:admin-site-alt3"/></a>
     </div>
     <div class="card-image">
       <img v-if="props.project.urlImage" class="card-img-top" :alt="'Image de décoration pour le projet '+ props.project.name" :src="props.project.urlImage">

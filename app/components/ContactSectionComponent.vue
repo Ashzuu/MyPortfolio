@@ -13,7 +13,7 @@
         <span class="info-icon"><Icon name="material-symbols:info-outline"/></span>
         <p>
           Mon site dédié à mes services de conception web est enfin en ligne !
-          <br>Retrouvez-le à l'adresse suivante : <a href="https://website.evandynak.me/" target="_blank">https://website.evandynak.me/</a>
+          <br>Retrouvez-le à l'adresse suivante : <a href="https://website.evandynak.me/" target="_blank" rel="noopener noreferrer">https://website.evandynak.me/</a>
         </p>
       </div>
     </div>
@@ -34,14 +34,14 @@
         </div>
       </a>
 
-      <a href="https://discord.com/users/982284761961754664" target="_blank" class="contact-card secondary-glow">
+      <a href="https://discord.com/users/982284761961754664" target="_blank" rel="noopener noreferrer" class="contact-card secondary-glow">
         <Icon name="ic:baseline-discord" class="card-icon"/>
         <div class="card-text">
           <h3>Discord</h3>
         </div>
       </a>
 
-      <a href="https://instagram.com/dyn.evan" target="_blank" class="contact-card secondary-glow">
+      <a href="https://instagram.com/dyn.evan" target="_blank" rel="noopener noreferrer" class="contact-card secondary-glow">
         <Icon name="mdi:instagram" class="card-icon"/>
         <div class="card-text">
           <h3>Instagram</h3>
@@ -52,8 +52,8 @@
     <div class="references-section">
       <p>Retrouvez les sites des orchestres dans lesquels je joue</p>
       <div class="ref-links">
-        <a href="https://www.oblique-orchestre.com/" target="_blank" class="ref-link">Orchestre Oblique <Icon name="material-symbols:arrow-outward"/></a>
-        <a href="https://stock-orchestre.fr/" target="_blank" class="ref-link">Orchestre STOCK <Icon name="material-symbols:arrow-outward"/></a>
+        <a href="https://www.oblique-orchestre.com/" target="_blank" rel="noopener noreferrer" class="ref-link">Orchestre Oblique <Icon name="material-symbols:arrow-outward"/></a>
+        <a href="https://stock-orchestre.fr/" target="_blank" rel="noopener noreferrer" class="ref-link">Orchestre STOCK <Icon name="material-symbols:arrow-outward"/></a>
       </div>
     </div>
 

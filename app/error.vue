@@ -2,7 +2,7 @@
 import { ref, onMounted, onUnmounted } from 'vue'
 import Button from "~/components/usable/Button.vue";
 
-const props = defineProps({
+defineProps({
   error: {
     type: Object,
     default: null

@@ -74,7 +74,7 @@ onMounted(() => {
       <div id="first-section-badge-container">
         <Badge class="primary-color-override">Musique</Badge><Badge class="secondary-color-override">Informatique</Badge>
       </div>
-      <h1 id="main-title"><span id="title-first-part"></span><br><span id="title-highlighted" class="synth-wave-color large"></span></h1>
+      <h1 id="main-title"><span id="title-first-part" /><br><span id="title-highlighted" class="synth-wave-color large" /></h1>
       <p class="description-content">Ce site a pour but de vous montrer mes différentes réalisations informatiques que j'ai pu réaliser tout au long de mon parcours,
       mais aussi parler un peu de moi et mes passions</p>
       <div id="buttons-section-container">

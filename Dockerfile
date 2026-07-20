@@ -15,6 +15,7 @@ RUN npm ci
 COPY . .
 RUN npm run build
 FROM node:${NODE_VERSION} AS runtime
+ARG PORT_EXPOSED
 WORKDIR /app
 ENV NODE_ENV=production
 COPY --from=deps /app/node_modules ./node_modules
