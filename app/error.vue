@@ -83,7 +83,8 @@ onUnmounted(() => {
     </div>
     
     <div class="error-content">
-      <h1 class="error-code synth-wave-color">{{ error?.statusCode || 404 }}</h1>
+      <NuxtImg id="image-error" v-if="error?.statusCode == 404" src="/img/illustrations/404.svg" alt="Page non trouvée"/>
+      <h1 v-if="error?.statusCode != 404" class="error-code synth-wave-color">{{ error?.statusCode }}</h1>
       <h2 class="error-title">
         {{ error?.statusCode === 404 ? 'Page Introuvable' : 'Erreur Serveur' }}
       </h2>

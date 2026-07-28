@@ -26,7 +26,10 @@ import Button from "~/components/usable/Button.vue";
 
       <h3>Propriété intellectuelle</h3>
       <p>
-        L'ensemble des contenus (textes, images, logos, vidéos, sons, etc.) publiés sur ce site est protégé par le droit d'auteur et la propriété intellectuelle. Toute reproduction, représentation, modification, adaptation ou exploitation partielle ou totale des contenus est interdite sans autorisation écrite préalable de l'éditeur.
+        L'ensemble des contenus (textes, images*, logos, vidéos, sons, etc.) publiés sur ce site est protégé par le droit d'auteur et la propriété intellectuelle. Toute reproduction, représentation, modification, adaptation ou exploitation partielle ou totale des contenus est interdite sans autorisation écrite préalable de l'éditeur.
+      </p>
+      <p>
+        * Excepté pour les illustrations "build.svg" & "404.svg" qui sont des éléments libres de droits et proviennent de <a href="https://storyset.com/" target="_blank" rel="noopener noreferrer">Storyset</a>.
       </p>
 
       <h3>Données personnelles & vie privée</h3>
@@ -49,7 +52,7 @@ import Button from "~/components/usable/Button.vue";
         Pour toute question relative aux mentions légales, contactez : <a href="mailto:evan.dynak@bbox.fr">evan.dynak@bbox.fr</a>
       </p>
 
-      <p class="note">Dernière mise à jour : <strong>21/12/25</strong></p>
+      <p class="note">Dernière mise à jour : <strong>28/07/26</strong></p>
     </div>
   </section>
 </template>

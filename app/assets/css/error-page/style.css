@@ -13,11 +13,17 @@
 
 .error-content {
   max-width: 600px;
+  height: 80%;
   padding: 2rem;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   gap: 2rem;
+}
+
+#image-error {
+  height: 40%;
 }
 
 .error-code {

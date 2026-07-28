@@ -8,7 +8,7 @@ export class ProjectService {
     {
       id:4,
       name:"Site de vente de solutions",
-      path:"commercial-website",
+      path:"wip",
       description:"Site commercial ou je fais la promotion de mes services informatiques, avec présentation de mon travail, mes services, mes tarifs et un formulaire de contact.",
       urlWebsite:"https://website.evandynak.me/",
       urlImage:"/img/commercial_illustration.png",
@@ -21,7 +21,7 @@ export class ProjectService {
     {
       id:5,
       name:"Mon Portfolio",
-      path:"portfolio",
+      path:"wip",
       description:"Le site où vous êtes actuellement, pour me présenter, mes projets, et ma passion pour la musique !",
       urlWebsite:"https://evandynak.me/",
       urlImage:"/img/portfolio_illustration.png",
@@ -34,7 +34,7 @@ export class ProjectService {
     {
       id:6,
       name:"DS Contrôles",
-      path:"ds-controles",
+      path:"wip",
       description:"Site vitrine pour la société DS Contrôles, qui m'a contacté afin que je fasse une refonte de leur site internet en php, datant de plus de 10 ans, pour un site plus moderne",
       urlWebsite:"https://dscontroles.com",
       urlImage:"/img/dscont_illustration.png",
@@ -46,7 +46,7 @@ export class ProjectService {
     {
       id:1,
       name:"Tyradex",
-      path:"tyradex",
+      path:"wip",
       description:"API REST Pokemon permettant de récupérer les données de n'importe quel Pokémon, des types, des résistances, et tout un tas d'autres données. Il s'agit de mon tout premier projet ! V3 actuellement en bêta.",
       urlWebsite:"https://tyradex.app/",
       urlImage:"/img/tyradex_illustration.png",
@@ -59,7 +59,7 @@ export class ProjectService {
     {
       id:2,
       name:"GymExercisesAPI",
-      path:"gym-api",
+      path:"wip",
       description:"Une API qui recense l'ensemble des exercices de musculation, permettant ainsi de rendre ceux-ci publiques et accessibles à tous. L'API est actuellement en cours de développement.",
       urlGithub:"https://github.com/Ashzuu/GymExercisesAPI",
       status:"En cours",
@@ -70,7 +70,7 @@ export class ProjectService {
     {
       id:3,
       name:"MusculAshzboard",
-      path:"musculashz",
+      path:"wip",
       description:"Un petit projet pour une (encore) autre passion : la musculation. L'objectif étant de pouvoir contrôler les différents exercices, les séances que l'on fait, pour pouvoir suivre sa progression en temps réel.",
       urlGithub:"https://github.com/Ashzuu/MusculAshzboard",
       status:"En cours",
@@ -81,7 +81,7 @@ export class ProjectService {
     {
       id:7,
       name:"Copupitre",
-      path:"copupitre",
+      path:"wip",
       description:"Projet de site Internet permettant de rechercher des musiciens pour un orchestre, du matériel, etc... (dépôt client uniquement, l'API est dans un autre dépôt)",
       urlGithub:"https://github.com/Ashzuu/CopupitreWebsite",
       status:"En cours",
@@ -92,7 +92,7 @@ export class ProjectService {
     {
       id:8,
       name:"Challenge-Dev",
-      path:"challengedev",
+      path:"wip",
       description:"Projet Github qui recense tous mes challenges que j'ai fais sur une plateforme très connue, mais que je ne citerai pas ici (pas difficile à trouver, mais si vous le savez merci de ne pas le révéler)",
       urlGithub:"https://github.com/Ashzuu/Challenge-Dev",
       status:"En cours",
