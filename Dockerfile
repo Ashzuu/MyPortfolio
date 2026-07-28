@@ -4,8 +4,7 @@ ARG NODE_VERSION="22-alpine"
 FROM node:${NODE_VERSION} AS deps
 WORKDIR /app
 COPY package.json package-lock.json ./
-RUN npm install
-RUN npm ci --only=production
+RUN npm ci --omit=dev
 
 FROM node:${NODE_VERSION} AS builder
 WORKDIR /app
