@@ -10,28 +10,32 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@nuxt/eslint": "^1.12.1",
+    "@nuxt/eslint": "^1.16.0",
     "@nuxt/fonts": "^0.12.1",
     "@nuxt/icon": "^2.1.1",
     "@nuxt/image": "^2.0.0",
-    "eslint": "^9.39.2",
-    "nuxt": "^4.2.2",
+    "eslint": "^10.8.0",
+    "nuxt": "^4.1.3",
     "vue": "^3.5.25",
     "vue-router": "^4.6.4"
   },
   "devDependencies": {
-    "@iconify-json/arcticons": "^1.2.46",
+    "@iconify-json/arcticons": "^1.2.56",
     "@iconify-json/dashicons": "^1.2.1",
     "@iconify-json/fluent-mdl2": "^1.2.1",
     "@iconify-json/humbleicons": "^1.2.20",
     "@iconify-json/ic": "^1.2.4",
     "@iconify-json/icon-park-outline": "^1.2.4",
     "@iconify-json/lucide": "^1.2.116",
-    "@iconify-json/material-symbols": "^1.2.50",
+    "@iconify-json/material-symbols": "^1.2.87",
     "@iconify-json/mdi": "^1.2.3",
-    "@iconify-json/prime": "^1.2.4",
+    "@iconify-json/prime": "^1.2.5",
     "@iconify-json/streamline-freehand": "^1.2.1",
     "@iconify-json/weui": "^1.2.4",
     "sass": "^1.97.1"
+  },
+  "overrides": {
+    "brace-expansion": "^5.0.8",
+    "sharp": "^0.35.0"
   }
 }

@@ -3,6 +3,32 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ['~/assets/css/style.css'],
   modules: ['@nuxt/eslint', '@nuxt/fonts', '@nuxt/icon', '@nuxt/image'],
+  icon: {
+    serverBundle: 'local',
+    fallbackToApi: false,
+    clientBundle: {
+      scan: true,
+      icons: [
+        'weui:arrow-filled',
+        'material-symbols:search',
+        'material-symbols:info-outline',
+        'material-symbols:arrow-outward',
+        'prime:book',
+        'humbleicons:code',
+        'fluent-mdl2:live-site',
+        'fluent-mdl2:web-environment',
+        'mdi:music-clef-bass',
+        'mdi:github',
+        'mdi:instagram',
+        'streamline-freehand:modern-music-bass-guitar',
+        'arcticons:symfonium-note',
+        'dashicons:admin-site-alt3',
+        'ic:outline-email',
+        'ic:baseline-discord',
+        'lucide:home'
+      ]
+    }
+  },
   vite: {
     optimizeDeps: {
       include: [

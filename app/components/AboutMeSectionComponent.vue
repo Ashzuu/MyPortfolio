@@ -9,7 +9,7 @@ import Field from "~/components/usable/Field.vue";
     <p class="secret-text">(Désolé ça fait très égocentrique mais c'est pour le référencement)</p>
     <div class="about-me-section-container">
       <div class="about-me-info-part">
-        <Field titre="BUT Informatique" description="IUT de Dijon" icon-name="prime-book" color="secondary"/>
+        <Field titre="BUT Informatique" description="IUT de Dijon" icon-name="prime:book" color="secondary"/>
         <Field titre="Mes langages favoris" description="TypeScript, Java" icon-name="humbleicons:code" color="secondary"/>
         <Field titre="Spécialités" description="Création de site web (vitrines, gestion)" icon-name="fluent-mdl2:live-site" color="secondary"/>
       </div>
